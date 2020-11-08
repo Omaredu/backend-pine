@@ -10,6 +10,4 @@ app.listen(app.get('port'), () => {
     console.log(`[app] server on port: ${app.get('port')}`)
 })
 
-app.get('/', (req, res) => {
-    res.send("Hola mundo")
-})
+app.use(require('./config/router'))

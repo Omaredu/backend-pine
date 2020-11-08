@@ -1,9 +1,9 @@
-const router = requrie('express').Router()
+const router = require('express').Router()
 
 // controller imports
 const { userController } = require('../controllers')
 
-router.use('user', userController)
+router.use('/user', userController)
 
 module.exports = router
 
